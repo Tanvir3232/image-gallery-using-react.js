@@ -1,8 +1,9 @@
-import { ADDITEM } from "./actionTypes"
+import { DELETEIMAGES } from "./actionTypes"
 
-export const addItem = id =>{
+
+export const deleteImages = selectedImages =>{
     return {
-        type: ADDITEM,
-        payload: id
+        type: DELETEIMAGES,
+        payload: selectedImages
     }
 }

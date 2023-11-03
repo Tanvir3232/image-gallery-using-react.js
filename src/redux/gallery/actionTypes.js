@@ -1,1 +1,2 @@
-export const  ADDITEM = "gallery/add";
+
+export const    DELETEIMAGES = "gallery/delete";
