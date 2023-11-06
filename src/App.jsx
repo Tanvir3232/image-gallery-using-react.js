@@ -6,7 +6,7 @@ import { resetImages } from "./redux/imageSelects/action";
 
 
 function App() {
-
+  
   const allData = useSelector((state) => state.galleryImages);
   const totalSelected = useSelector((state)=>state.selectedImages);
   const dispatch = useDispatch();
@@ -15,6 +15,7 @@ function App() {
     dispatch(resetImages());
     
   }
+  
 
   return (
     <div className="bg-slate-100 p-5">
@@ -32,9 +33,10 @@ function App() {
               key={data.id}
               data={data}
               firstElement = {allData[0].id}
+              totalSelected = {totalSelected}
             />
           ))}
-          <button className="border-2 border-dashed rounded-xl font-semibold">Add Images</button>
+          <button className="border-2 border-dashed rounded-xl w-full h-60 font-semibold">Add Images</button>
         </div>
       </div>
 
