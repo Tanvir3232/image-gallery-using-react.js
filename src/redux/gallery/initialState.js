@@ -1,9 +1,6 @@
 
 export const initialState = [
-    {
-        id: 0,
-        imageUrl: "images/image-1.webp"
-    },
+  
     {
         id: 1,
         imageUrl: "images/image-2.webp"
@@ -44,4 +41,8 @@ export const initialState = [
         id: 10,
         imageUrl: "images/image-11.jpeg"
     },
+    {
+        id: 11,
+        imageUrl: "images/image-1.webp"
+    }
 ]
