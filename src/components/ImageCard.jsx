@@ -11,7 +11,7 @@ const ImageCard = ({ data ,firstElement,totalSelected}) => {
     const handleAddSelectImage = (imageId) =>{
       dispatch(selectImage(imageId))
       setCheckbox(true);
-      setSelected(true);
+      setSelected(!selected);
     }
     return (
       <div
